@@ -1,4 +1,3 @@
-// E-commerce Store JavaScript
 class EcommerceStore {
   constructor() {
     this.checkoutInfo = null;
@@ -7,7 +6,6 @@ class EcommerceStore {
     this.currentFilter = "all";
     this.currentUser = JSON.parse(localStorage.getItem("currentUser")) || null;
     this.orders = JSON.parse(localStorage.getItem("orders")) || [];
-    // Add these at the top of the EcommerceStore class for token support
     this.token = localStorage.getItem("token") || null;
 
     this.init();

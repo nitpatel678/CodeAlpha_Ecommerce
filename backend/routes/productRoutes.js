@@ -3,6 +3,6 @@ const { getProducts, addProduct } = require("../controllers/productController");
 const router = express.Router();
 
 router.get("/", getProducts);
-router.post("/", addProduct); // Optional: protect with admin
+router.post("/", addProduct); 
 
 module.exports = router;
